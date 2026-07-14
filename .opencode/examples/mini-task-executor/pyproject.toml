@@ -1,0 +1,17 @@
+[project]
+name = "mini-task-executor"
+version = "0.1.0"
+description = "Mini 任务执行器 — 演示架构至上的模块化设计"
+requires-python = ">=3.10"
+dependencies = [
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.backends._legacy:_Backend"

@@ -1,0 +1,52 @@
+{
+    "label": "demo-抓取放置流程",
+    "tasks": [
+        {
+            "action": "move_to",
+            "target": {"x": 0.10, "y": 0.05, "z": 0.01},
+            "label": "移动到抓取位置上方"
+        },
+        {
+            "action": "move_to",
+            "target": {"x": 0.10, "y": 0.05, "z": -0.02},
+            "label": "下降到抓取高度"
+        },
+        {
+            "action": "grasp",
+            "label": "抓取物体"
+        },
+        {
+            "action": "move_to",
+            "target": {"x": 0.10, "y": 0.05, "z": 0.05},
+            "label": "抬升"
+        },
+        {
+            "action": "move_to",
+            "target": {"x": 0.25, "y": 0.15, "z": 0.05},
+            "label": "移动到放置位置上方"
+        },
+        {
+            "action": "move_to",
+            "target": {"x": 0.25, "y": 0.15, "z": -0.02},
+            "label": "下降到放置高度"
+        },
+        {
+            "action": "release",
+            "label": "释放物体"
+        },
+        {
+            "action": "move_to",
+            "target": {"x": 0.25, "y": 0.15, "z": 0.05},
+            "label": "抬升"
+        },
+        {
+            "action": "read_sensor",
+            "label": "读取传感器确认"
+        },
+        {
+            "action": "move_to",
+            "target": {"x": 0.0, "y": 0.0, "z": 0.1},
+            "label": "回到原点"
+        }
+    ]
+}
