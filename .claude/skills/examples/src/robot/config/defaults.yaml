@@ -1,0 +1,4 @@
+# robot 包默认配置
+robot:
+  ip: "192.168.1.100"
+  mock: true
